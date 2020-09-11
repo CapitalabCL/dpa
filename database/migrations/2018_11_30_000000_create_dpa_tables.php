@@ -43,8 +43,8 @@ class CreateDPATables extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('regiones');
-        Schema::dropIfExists('provincias');
         Schema::dropIfExists('comunas');
+        Schema::dropIfExists('provincias');
+        Schema::dropIfExists('regiones');
     }
 }
