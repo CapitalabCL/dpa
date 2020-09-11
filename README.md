@@ -2,12 +2,11 @@
 
 Paquete laravel que contiene las tablas, modelos y datos con la división política administrativa de Chile. Regiones, provincias y comunas.
 
-
 ## Instalación
 
 Instala DPA con composer:
 
-```bash
+```
 composer require capitalab/dpa
 ```
 
@@ -30,7 +29,6 @@ php artisan dpa:seed
 ```
 
 ## Uso
-
 
 ```php
 use Capitalab\DPA\Region;
