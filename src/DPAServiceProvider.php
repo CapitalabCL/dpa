@@ -2,6 +2,7 @@
 
 namespace Capitalab\DPA;
 
+use Capitalab\DPA\Console\PublishCommand;
 use Capitalab\DPA\Console\SeedDataCommand;
 use Illuminate\Support\ServiceProvider;
 
@@ -16,7 +17,8 @@ class DPAServiceProvider extends ServiceProvider
     {
         if($this->app->runningInConsole()) {
             $this->commands([
-                SeedDataCommand::class
+                SeedDataCommand::class,
+                PublishCommand::class,
             ]);
         }
 
